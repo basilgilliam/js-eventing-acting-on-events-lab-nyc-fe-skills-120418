@@ -18,6 +18,17 @@ const moveDodgerRight = () => {
   }
 }
 
+const moveDodgerUp = () => {
+   const dodger = document.getElementById('dodger')
+  const currentUp = dodger.style.top
+  let currentUpNumber = currentUp.replace('px', '')
+  currentUpNumber = parseInt(currentUpNumber, 10)
+  if (currentUpNumber < 360 ){
+    dodger.style.top = currentRightNumber + 5 + 'px'
+  }
+}
+}
+
 const moveDodgerHelper = (event) => {
     if (event.keyCode === 37){
       moveDodgerLeft()
