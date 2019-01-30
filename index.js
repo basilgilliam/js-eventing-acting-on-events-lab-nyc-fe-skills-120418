@@ -26,7 +26,7 @@ const moveDodgerUp = () => {
   if (currentUpNumber < 360 ){
     dodger.style.top = currentRightNumber + 5 + 'px'
   }
-}
+
 }
 
 const moveDodgerHelper = (event) => {
