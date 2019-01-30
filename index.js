@@ -6,9 +6,20 @@ const moveDodgerLeft = () => {
   dodger.style.left = currentLeftNumber - 5 + 'px'
 } 
 
+const moveDodgerRight = () => {
+  const dodger = document.getElementById('dodger')
+  const currentRight = dodger.style.left
+  let currentRightNumber = currentRight.replace('px', '')
+  currentRightNumber = parseInt(currentRightNumber, 10)
+  dodger.style.left = currentRightNumber + 5 + 'px'
+} 
+}
+
 const moveDodgerHelper = (event) => {
     if (event.keyCode === 37){
       moveDodgerLeft()
+    } if (event.keyCode === 39) {
+      moveDodgerRight()
     }
   
 }
